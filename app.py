@@ -16,7 +16,7 @@ if st.checkbox("Construir un gráfico de barras de la cantidad de vehículos por
                         model_year_counts.columns[1]: 'Cantidad'},
                 title='Cantidad de Vehículos por Año de Modelo')
 
-fig.show()
+    fig.show()
 if st.checkbox("Construir un diagrama de caja sobre el precio vs condición del vehículo"):
     fig = px.box(vehicles, x='condition', y='price', title='Precio vs Condición del Vehículo')
     fig.show()
